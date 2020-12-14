@@ -10,7 +10,7 @@ I made Sprite Factory to solve a very specific problem. Sometimes you find aweso
 
 ![Adventurer](Examples/adventurer.png)
 
-<small>credit: [Eltan](https://www.patreon.com/posts/pig-sprites-30296626)</small>
+
 
 You could always hand roll the animations in code but that can get tedious pretty quickly. Especially if you've got a lot of content to animate.
 
@@ -36,15 +36,6 @@ Or you could [download Sprite Factory](https://craftworkgames.itch.io/sprite-fac
 }
 ```
 
-Then you can load them into your game** and get on with game development.
-
-```cs
-var spriteSheet = Content.Load<SpriteSheet>("Animations/adventurer.sf", new JsonContentLoader());
-var sprite = new AnimatedSprite(spriteSheet);
-sprite.Play("idle");
-```
-
-** The loading code above currently works in the `develop` branch of [MonoGame.Extended](https://github.com/craftworkgames/MonoGame.Extended)
 
 ## Wait, it's really open source and free?
 
